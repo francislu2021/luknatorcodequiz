@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Luknator Code Quiz</title>
+    <meta name="description" content="a fun quiz with count-down timer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/script.js" async defer></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <!--jQuery script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--jQuery Script-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!--Start Quiz Page-->
+    <section id="start-quiz-section">
+        <h1 class="quiz-title">2021 Luknator Full Stack Coding Quiz</h1>
+        <img class="imgcover" src="./css/images/chris-ried-ieic5Tq8YMk-unsplash.jpg" alt="coding screen img" />
+        <p class="quiz-description">
+            Welcome to luknator coding quiz session! You have 5 minutes to complete all 5 questions! Leave your email for the prize!
+        </p>
+        <button class="start">Begin Quiz</button>
+    </section>
+
+    <!--Display when Start Quiz button is clicked-->
+    <section id="active-quiz-section">
+        <div class="sticky">
+            <div class="title-exit">
+                <h1 class="quiz-title">Coders'Preferences</h1>
+                <div class="exit-format">
+                    <button class="exit">Exit Quiz</button>
+                </div>
+            </div>
+            <div class="timer-ques-num">
+                <h4 class="question-number-change"></h4>
+                <h4 class="quiz-timer">
+                    Time Left:
+                    <span class="timer"></span>
+                </h4>
+            </div>
+        </div>
+
+        <!--This container hold the quiz questions and responses -->
+        <div class="quiz-container">
+            <div class="questions">
+                <!--This container holds individual questions and responses -->
+                <div class="question-response-container">
+                    <div class="question-container">
+                        <h4 class="question-number">Question 1 of 5</h4>
+                        <img class="imag-q1" src="./css/images/kevin-ku-w7ZyuGYNpRQ-unsplash.jpg" alt="question 1 image" />
+                        <p class="question">Which ice cream flavor do you like?</p>
+                    </div>
+                    <div class="response-container">
+                        <div class="response left">
+                            <input class="response-1" type="radio" name="response-1" value="vanilla" />
+                            <p>Vanilla</p>
+                        </div>
+                        <div class="response left">
+                            <input class="response-1" type="radio" name="response-1" value="chocolate" />
+                            <p>Chocolate</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-1" type="radio" name="response-1" value="cookies" />
+                            <p>Cookies</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-1" type="radio" name="response-1" value="rum" />
+                            <p>Rum</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-response-container">
+                    <div class="question-container">
+                        <h4 class="question-number">Question 2 of 5</h4>
+                        <p class="question">What is HTML?</p>
+                    </div>
+                    <div class="response-container">
+                        <div class="response left">
+                            <input class="response-2" type="radio" name="response-2" value="astructure" />
+                            <p>A strucutre</p>
+                        </div>
+                        <div class="response left">
+                            <input class="response-2" type="radio" name="response-2" value="content" />
+                            <p>Conent</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-2" type="radio" name="response-2" value="meta" />
+                            <p>Headings, meta info</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-2" type="radio" name="response-2" value="allabove" />
+                            <p>All of above</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-response-container">
+                    <div class="question-container">
+                        <h4 class="question-number">Question 3 of 5</h4>
+                        <p class="question">What you do after work?</p>
+                    </div>
+                    <div class="response-container">
+                        <div class="response left">
+                            <input class="response-3" type="radio" name="response-3" value="reading" />
+                            <p>Reading</p>
+                        </div>
+                        <div class="response left">
+                            <input class="response-3" type="radio" name="response-3" value="sleeping" />
+                            <p>Sleeping</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-3" type="radio" name="response-3" value="outing" />
+                            <p>Outing</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-3" type="radio" name="response-3" value="sporting" />
+                            <p>Sporting</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-response-container">
+                    <div class="question-container">
+                        <h4 class="question-number">Question 4 of 5</h4>
+                        <p class="question">Why do you use Boostrap?</p>
+                    </div>
+                    <div class="response-container">
+                        <div class="response left">
+                            <input class="response-4" type="radio" name="response-4" value="easy" />
+                            <p>Easy</p>
+                        </div>
+                        <div class="response left">
+                            <input class="response-4" type="radio" name="response-4" value="short" />
+                            <p>short learning curve</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-4" type="radio" name="response-4" value="fun" />
+                            <p>Fun</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-4" type="radio" name="response-4" value="all" />
+                            <p>All of above</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="question-response-container">
+                    <div class="question-container">
+                        <h4 class="question-number">Question 5 of 5</h4>
+                        <p class="question">
+                            Which company do you work for?
+                        </p>
+                    </div>
+                    <div class="response-container">
+                        <div class="response left">
+                            <input class="response-5" type="radio" name="response-5" value="Google" />
+                            <p>Google</p>
+                        </div>
+                        <div class="response left">
+                            <input class="response-5" type="radio" name="response-5" value="netflix" />
+                            <p>Netflix</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-5" type="radio" name="response-5" value="facebook" />
+                            <p>Facebook</p>
+                        </div>
+                        <div class="response right">
+                            <input class="response-5" type="radio" name="response-5" value="shopify" />
+                            <p>Shopify</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--These are most of the buttons -->
+        <div class="button-indicator">
+            <button class="prev">Previous Question</button>
+            <div class="indicator-container">
+                <ul class="indicators"></ul>
+            </div>
+            <button class="next">Next Question</button>
+            <button class="review">Review Responses</button>
+            <button class="submit">Submit Responses</button>
+        </div>
+    </section>
+
+    <!--Results Page, displays when timer ends or when submit button is clicked-->
+    <section id="quiz-results-section">
+        <h1 class="title">Your Results</h1>
+        <h3 class="percent-result"></h3>
+        <i class="circle-result"></i>
+        <h4 class="user-result"></h4>
+        <p class="result-description">
+            Congradulations! Claim your quiz gift at HR!
+        </p>
+        <button class="reset">Take Quiz Again</button>
+    </section>
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
